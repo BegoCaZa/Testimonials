@@ -24,5 +24,95 @@ nav ul {
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: #1A1A1A;
+}
+
+.header{
+  align-content: center;
+  padding-left: 16px;
+  padding-top: 45px;
+  margin-bottom: 0;
+}
+
+@media screen and (width > 768px) {
+  .header {
+    padding-left: 200px;
+    padding-top: 160px;
+    align-content: flex-start;
+  }
+}
+
+.buttons-container{
+ width: 300px;
+ height: 44px;
+ padding-left: 40px;
+ display: flex;
+ justify-content: space-evenly;
+ gap: 24px;
+
+}
+
+.button{
+  padding: 10px 16px 10px 16px ;
+  width: 120px;
+  height: 44;
+  border: none;
+  font-family: inherit;
+  border-radius: 8px;
+  font-weight: 400;
+  color: white;
+  border: 2px solid #6A32EF
+}
+
+.button-login{
+  background-color: #6A32EF;
+}
+
+.button-signin{
+  background-color: #1A1A1A;
+}
+
+.header-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 343px;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.text{
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.674);
+}
+
+@media screen and (width > 768px) {
+  .header-content {
+    position: relative;
+    width: 555px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .buttons-container{
+    position:absolute;
+    content: "";
+    left:950px;
+    top:250px;
+    width: 320px;
+  }
+
+  .button {
+    font-size: 20px;
+    padding: 3px 10px 3px 10px ;
+    width: 160px;
+  }
+
 }
