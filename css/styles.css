@@ -27,7 +27,16 @@ body {
   font-family: "Poppins", sans-serif;
   color: white;
   background-color: #1A1A1A;
+  background-image: radial-gradient(at bottom, #7EF2FF 0%, #1A1A1A 70%);
+  
 }
+
+@media screen and (width > 768px) {
+  .body {
+    background-image: radial-gradient(at left, #7EF2FF 0%, #1A1A1A 70%);
+  }
+}
+
 
 .header{
   align-content: center;
@@ -190,11 +199,10 @@ body {
 
 @media screen and (width > 768px) {
   .testimonials {
-    width: 1500px;
     flex-direction: row;
     align-content: flex-start;
     margin-left: 200px;
-  }
+    }
 }
 
 .card-first{
