@@ -31,8 +31,8 @@ body {
 
 .header{
   align-content: center;
-  padding-left: 16px;
-  padding-top: 45px;
+  padding-left: 1rem;
+  padding-top: 2.8125rem;
   margin-bottom: 0;
 }
 
@@ -45,25 +45,25 @@ body {
 }
 
 .buttons-container{
- width: 300px;
- height: 44px;
- padding-left: 40px;
+ width: 18.75rem;
+ height: 2.75rem;
+ padding-left: 2.5rem;
  display: flex;
  justify-content: space-evenly;
- gap: 24px;
+ gap: 1.5rem;
 
 }
 
 .button{
-  padding: 10px 16px 10px 16px ;
-  width: 120px;
-  height: 44;
+  padding: 0.625rem 1rem 0.625rem 1rem ;
+  width: 7.5rem;
+  height: 2.75rem;
   border: none;
   font-family: inherit;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-weight: 400;
   color: white;
-  border: 2px solid #6A32EF
+  border: 0.125rem solid #6A32EF
 }
 
 .button-login{
@@ -79,13 +79,13 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  width: 343px;
+  width: 21.4375rem;
 }
 
 .title{
   font-weight: 700;
-  font-size: 48px;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  margin-bottom: 0.625rem;
   background: linear-gradient(to right, #6131F8,#c140a0, #fc8866);
   background-size: 200%;
   background-clip: text;
@@ -101,7 +101,7 @@ body {
 @media screen and (width > 768px) {
   .header-content {
     position: relative;
-    width: 555px;
+    width: 34.6875rem;
     align-items: flex-start;
     text-align: left;
   }
@@ -109,15 +109,125 @@ body {
   .buttons-container{
     position:absolute;
     content: "";
-    left:950px;
-    top:250px;
-    width: 320px;
+    left:59.375rem;
+    top:15.625rem;
+    width: 20rem;
   }
 
   .button {
-    font-size: 20px;
-    padding: 3px 10px 3px 10px ;
-    width: 160px;
+    font-size: 1.25rem;
+    padding: 0.1875rem 0.625rem 0.1875rem 0.625rem ;
+    width: 10rem;
   }
 
+}
+
+.card-text{
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  margin: 0%;
+}
+
+.stars-container{
+  display: block;
+  width: 5rem;
+  height: 1rem;
+}
+
+.icon-container{
+  display: block;
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.card-name{
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 0%;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0%;
+}
+
+.card-title{
+  text-align: center;
+  row-gap: none;
+}
+
+.card{
+  width: 342px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 2rem 1.25rem 2rem 1.25rem;
+  border-radius: 1.25rem;
+  margin-top: 32px;
+  margin-left: 16px;
+}
+@media screen and (width > 768px) {
+  .card {
+    margin-left: 0;
+    margin-right: 32px;
+    margin-top: 0;
+  }
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 2rezm;
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+@media screen and (width > 768px) {
+  .testimonials {
+    width: 1500px;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-left: 200px;
+  }
+}
+
+.card-first{
+  background-color: #212121bf;
+}
+@media screen and (width > 768px) {
+  .card-first {
+    position: relative;
+  }
+}
+
+.card-second{
+  background-color: #212121bf;
+}
+@media screen and (width > 768px) {
+  .card-second {
+    position: absolute;
+    content: "";
+    left: 580px;
+    top: 450px;
+    padding-bottom: 32px;
+  }
+}
+
+.card-third{
+  background-color: #212121bf;
+}
+@media screen and (width > 768px) {
+  .card-third {
+    position: absolute;
+    content: "";
+    left: 960px;
+    top: 490px;
+    padding-bottom: 32px;
+  }
 }
