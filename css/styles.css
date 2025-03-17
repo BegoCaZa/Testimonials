@@ -27,7 +27,8 @@ body {
   font-family: "Poppins", sans-serif;
   color: white;
   background-color: #1A1A1A;
-  background-image: radial-gradient(at bottom, #7EF2FF 0%, #1A1A1A 70%);
+  background-image: radial-gradient(circle at bottom, #7EF2FF 0%, #1A1A1A 70%);
+  min-height: 100vh;
   
 }
 
@@ -80,7 +81,7 @@ body {
 }
 
 .button-signin{
-  background-color: #1A1A1A;
+  background-color: transparent;
 }
 
 .header-content{
@@ -194,7 +195,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   row-gap: 2rezm;
-  margin: 2.5rem 0 2.5rem 0;
+  margin: 2.5rem 0 0px 0;
 }
 
 @media screen and (width > 768px) {
